@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-management
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_management_db
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.security: DEBUG
